@@ -5,7 +5,7 @@
 
 .parallax {
   /*first image*/
-  background-image: ("welcome.jpg");
+  background-image: "welcome.jpg";
   /*height used*/
   min-height: 500px;
   /*creates  the scrolling effect*/
