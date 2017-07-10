@@ -2,11 +2,30 @@ body, html {
   height: 100%;
 }
 
+body, html {
+  height:100%;
+  color:#777;
+  line-height: 1.8;
+}
+
+/* creates parallax effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no no-repeat;
+  background-size: cover;
+}
+
+
+
+
+
+
 .parallax {
   /*first image*/
-  background-image: url('../img/welcome.jpg');
+  background-image: url('../img/black.jpg');
   /*height used*/
-  min-height: 20%;
+  min-height: 25%;
   /*creates  the scrolling effect*/
   background-attachment: fixed;
   background-position: center;
@@ -17,4 +36,11 @@ body, html {
 * {
   font-family: 'Wire One', sans-serif;
   color: black;
+}
+
+/* turn off parallax for scrolling tablets and phones */
+@@media only screen and (max-device-width:1024px) {
+  .parallax{
+    background-attachment: scroll;
+  }
 }
